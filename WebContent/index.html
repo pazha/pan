@@ -1,0 +1,108 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>百度网盘搜索引擎</title>
+<script src="./js/jquery.min.js"></script><script>
+ $(function(){
+           $("#cheng").hide();$(".xianshi").hover(
+           											function(){$("#cheng").show();},function(){$("#cheng").hide();}
+           										) 
+			$("#cheng").hover(
+							function(){$("#cheng").show();},function(){$("#cheng").hide();}
+							)
+			}
+	)	
+$(function(){
+           $("#cheng1").hide();$("#teshu").hover(
+           											function(){$("#cheng1").show();},function(){$("#cheng1").hide();}
+           										) 
+			$("#cheng1").hover(
+							function(){$("#cheng1").show();},function(){$("#cheng1").hide();}
+							)
+			}
+	)
+</script><style>
+body{margin:0; font-family:arial; font-size:13px;line-height:24px;}
+form{margin:0; padding:0;}
+a{color:#333;}
+a:hover{color:#00c;}
+#container{margin:19 auto;}
+#menu{float:right; margin-right:12px;}/*在百度首页中它并没有清除，所以我就给menu加上了float:right;*/
+#menu ul{margin:0; padding:0; list-style:none;}
+#menu ul li{float:left;margin-left:20px;}
+#menu ul li span{font-weight:bold;}
+#menu #teshu{background:#317ef3; text-align:center; margin-left:24px;}
+#menu #teshu a{color:white; text-decoration:none; padding:4px;}
+#content{margin-top:65px; margin-bottom:350px;}/*没有高宽度在这里就默认是中间的这整块所以无法让其居中，这一整块其实已经就是居中了。*/
+#content #image{width:270px; height:129px; margin-left:auto; margin-right:auto;}
+#content #shuru{width:650px; height:50px; margin-top:22px; margin-left:auto; margin-right:auto;}
+#content #shuru .kuang{font-size:14px; line-height:25px;width:539px; height:36px; border:1px solid #ccc; border-right:none; padding-left:8px; padding-right:8px;} /*&#25105;&#25630;&#19981;&#25026;&#20026;&#20160;&#20040;&#36825;&#37324;&#24517;&#39035;&#29992;margin&#25165;&#34892;&#65292;&#29992;padding&#21453;&#32780;&#19981;&#33021;&#23621;&#20013;&#12290;*/
+#content #shuru .kuang:hover{border:1px solid #b8b8b8; border-right:none;}
+#content #shuru .kuang:focus{border:1px solid #2d78f4; border-right:none;}
+#content #shuru .button{width:100px; height:36px;background:#317ef3; border:1px solid transparent; font-size:15px; font-color:white;}/*使用border:1px solid transparent解决了输入框和按钮上下对不齐的问题*/
+#content #shuru .button:hover{cursor:pointer; border-bottom:1px solid #2868c8; box-shadow:1px 1px 1px #ccc; background:#2d78f4;}/*之前我这里用的是input：hover，但我发现也可以用button：hover，这解决了继承问题（因为这里有两个input容易窜）也使得代码变少（之前在上一行input我是加了span的即span input{}）*/
+#footer{margin-left:auto;margin-right:auto;text-align:center;font:12px arial;}
+#footer #footer1{margin-bottom:5px;}
+#footer #footer1 a{color:#00c;padding:0 8.5px; word-spacing:3px;}/*只要不定义a:hover默认悬浮就不会出现其他颜色;这里word-spacing是使单词之的空白增多或减少，仅对英文单词起作用*/
+#footer #footer2{color:#666}
+#footer #footer2 a{color:#666;}
+#footer #footer2 span{display:inline-block; width:14px; height:17px; background:url("http://s1.bdstatic.com/r/www/cache/static/global/img/icons_3bfb8e45.png") -600px -96px no-repeat; position:relative; top:3px;}/*这里为社么只能用相对自己定位而不能用内外边距来实现，也是个重点。*/
+#cheng{width:70px;}
+#arrow{right:100px; top:37px; width:24px; height:13px; background:url(http://s1.bdstatic.com/r/www/cache/static/home/img/icons_c3b33b92.png) no-repeat scroll -90px -1px / 300px 21px rgba(0, 0, 0, 0); position:absolute; z-index:3;}
+#arrowbottom{right:70px; top:49px; width:70px; font-size:12px; text-align:center; border:1px solid #d1d1d1; box-shadow:1px 1px 5px #d1d1d1; position:absolute; z-index:2;}
+#arrowbottom ul{margin:0; padding:1px 0; list-style:none; }
+#arrowbottom ul li a{display:block; text-decoration:none;}/*这里用显示成块还真就使悬浮在它上边的蓝色变大了*/
+#arrowbottom ul li a:hover{color:white; background:#317ef3;}
+#cheng1{width:80px; height:760px; background:#f9f9f9; font-color:#666; font-size:12px; border-left:1px solid #e7e7e7; position:absolute; z-index:4; right:0px; top:0px;}
+#cheng1 a{width:66px; height:76px; display:block; cursor:pointer; border-bottom:1px solid #f0f0f0; text-align:center; margin:auto;}
+#cheng1 a:hover{color:#333; text-decoration:underline;}
+#cheng1 #H{width:66px; height:33px; margin:19px auto 0px; text-align:center;}
+#cheng1 .F{font-size:12px;}
+#cheng1 .q{width:36px; height:36px; display:block; margin:auto; background: url("http://s1.bdstatic.com/r/www/cache/static/home/img/logos/bdbri_icons_737be4e5.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#cheng1 .w{width:36px; height:36px; display:block; margin:auto; background: url("http://s1.bdstatic.com/r/www/cache/static/home/img/logos/bdbri_icons_737be4e5.png") no-repeat scroll -36px 0 rgba(0, 0, 0, 0);}
+#cheng1 .e{width:36px; height:36px; display:block; margin:auto; background: url("http://s1.bdstatic.com/r/www/cache/static/home/img/logos/bdbri_icons_737be4e5.png") no-repeat scroll -72px 0 rgba(0, 0, 0, 0);}
+#cheng1 .r{width:36px; height:36px; display:block; margin:auto; background: url("http://s1.bdstatic.com/r/www/cache/static/home/img/logos/bdbri_icons_737be4e5.png") no-repeat scroll -112px 0 rgba(0, 0, 0, 0);}
+#cheng1 .t{width:36px; height:36px; display:block; margin:auto; background: url("http://s1.bdstatic.com/r/www/cache/static/home/img/logos/bdbri_icons_737be4e5.png") no-repeat scroll -148px 0 rgba(0, 0, 0, 0);}
+#cheng1 .y{width:36px; height:36px; display:block; margin:auto; background: url("http://s1.bdstatic.com/r/www/cache/static/home/img/logos/bdbri_icons_737be4e5.png") no-repeat scroll -184px 0 rgba(0, 0, 0, 0);}
+#cheng1 .u{width:36px; height:36px; display:block; margin:auto; background: url("http://s1.bdstatic.com/r/www/cache/static/home/img/logos/bdbri_icons_737be4e5.png") no-repeat scroll -220px 0 rgba(0, 0, 0, 0);}
+.clearfloat{clear:both;}/*可以为left/right/both*/
+</style>
+
+<script>
+	function checkForm(){
+		var q=document.getElementById("q");
+		if(q.value==null || q.value==""){
+			alert("骚年，请输入需要搜索的信息！");
+			return false;
+		}
+		return true;
+	}
+</script>
+
+</head>
+
+  
+
+<body>
+	<div id="container">
+
+		<div class="clearfloat"></div>
+		<div id="content">
+			<div id="image"><img width="270" height="129" src="./image/logo.jpg"></div>
+			<div id="shuru">
+				<form name="" action="result.jsp" method="get" target="_blank" onsubmit="return checkForm()" >
+					<input id="q" class="kuang" type="text" name="q"><input class="button" style="color:white;" type="submit" value="网盘一下">
+				</form>
+			</div>
+			
+		</div>
+		<div id="footer">
+			
+			<div id="footer2">
+				免责声明：本站搜索结果来自百度云，不存储任何内容，只提供信息检索服务，对其合法性概不负责，亦不承担任何法律责任。</br>
+				©2016 <a href="http://www.inslow.com">inslow.com</a> Powered by <a href="https://cse.google.com">Google Custom Search</a> BetaV1.0&nbsp;<span></span>
+			</div>
+		</div>
+	</div>
+
+</body></html>
+
+<script type="text/javascript" src="js/base.js"></script>
